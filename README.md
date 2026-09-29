@@ -1,26 +1,154 @@
-# BACKKDROP — Final Premium Build
+<div align="center">
 
-A clean, responsive fashion storefront demo for shoes, watches, apparel and accessories.
+# BACKKDROP
 
-## Final build improvements
-- Robust wishlist open/close behavior with Escape and outside-click handling
-- Wishlist state safely persists when browser storage is available
-- Product detail modal with size selection and wishlist/save controls
-- Smooth add-to-bag image flight + bag impact animation
-- Cart drawer and demo checkout flow
-- Backkdrop AI assistant with close button, Escape and mobile backdrop handling
-- Login / signup / profile editing / logout
-- Light + dark themes with saved preference
-- Compact mobile navigation
-- Search results open products directly
-- Drop, story, editorial and why-Backkdrop image sections
-- Blur + fade page entrance only
-- Responsive desktop/tablet/mobile layouts
+### Modern Fashion & Lifestyle E-Commerce
 
-## Run
-Open `index.html` in a modern browser, or serve this folder from a simple static web server.
+**YOUR STYLE. YOUR BACKDROP.**
 
-## Validation
-`app.js` passes Node.js syntax validation.
+A premium, responsive fashion storefront built around curated drops, editorial storytelling, product discovery and interactive shopping experiences.
 
-This is a front-end demo. Real authentication, payments, inventory, orders and customer data require a backend/service before production use.
+<br>
+
+[🌐 **LIVE WEBSITE**](https://irxx-sudo.github.io/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience/)
+&nbsp;&nbsp;•&nbsp;&nbsp;
+[💻 **SOURCE CODE**](https://github.com/irxx-sudo/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience)
+
+</div>
+
+---
+
+## ✦ About
+
+**Backkdrop** is a modern fashion and lifestyle e-commerce concept designed to make online shopping feel more like a fashion editorial than a traditional online store.
+
+The experience combines:
+
+- curated fashion drops
+- editorial storytelling
+- product discovery
+- personalized style exploration
+- wishlist and cart interactions
+- account and profile management
+- responsive mobile-first design
+- smooth animations and micro-interactions
+
+Backkdrop is currently a **front-end e-commerce experience** and serves as the foundation for a future full-stack fashion platform.
+
+---
+
+# 🚀 Explore Backkdrop
+
+| Experience | Link |
+|---|---|
+| 🌐 **Live Store** | [**ENTER BACKKDROP →**](https://irxx-sudo.github.io/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience/) |
+| 💻 **GitHub Repository** | [**VIEW SOURCE →**](https://github.com/irxx-sudo/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience/) |
+
+---
+
+# ✨ Features
+
+## 🛍️ Shopping
+
+- Curated fashion and lifestyle products
+- Product discovery
+- Product details
+- Size selection
+- Add to Bag
+- Shopping cart
+- Wishlist
+- Search
+- Category filtering
+- Product recommendations
+- Smooth shopping interactions
+
+## 👤 Account
+
+- Login
+- Signup
+- Profile editing
+- Personal details management
+- Logout
+- Persistent user preferences
+- Persistent wishlist
+
+## 🎯 Style & Discovery
+
+### Style Finder
+
+Explore products based on different fashion moods and preferences.
+
+### Backkdrop AI
+
+A fashion-assistant concept designed to help users discover products and build outfits.
+
+### Curated Drops
+
+Products are presented through editorial-style collections rather than a traditional product catalog.
+
+---
+
+# ◌ DROP 07 — AFTER / DARK
+
+### 08 PIECES. ONE MOOD. YOUR BACKDROP.
+
+**AFTER / DARK** is a curated fashion drop built around darker tones, contemporary silhouettes, accessories and late-night styling.
+
+The Drop experience is designed to evolve into a complete limited-release system.
+
+### Planned Drop Features
+
+- Limited releases
+- Countdown system
+- Availability indicators
+- Drop-exclusive products
+- Complete outfit recommendations
+- Interactive lookbooks
+- Editorial stories
+- Collection-based shopping
+
+---
+
+# 🎨 Design Philosophy
+
+Backkdrop follows a **minimal fashion-editorial design direction**.
+
+### DARK
+
+Deep black surfaces, high-contrast typography, subtle borders and controlled accent colors.
+
+### LIGHT
+
+Warm ivory backgrounds, soft neutral surfaces, dark typography and refined olive accents.
+
+### MOTION
+
+Animation is intentionally restrained.
+
+The interface focuses on:
+
+- subtle blur
+- fade transitions
+- image movement
+- product hover effects
+- smooth modal transitions
+- responsive navigation
+- Add-to-Bag motion
+- micro-interactions
+
+> **Make the website feel alive without making it feel noisy.**
+
+---
+
+# 📱 Responsive Experience
+
+Backkdrop is designed to work across:
+
+```text
+Desktop
+   ↓
+Laptop
+   ↓
+Tablet
+   ↓
+Mobile
