@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BACKKDROP — Wear Your Identity</title>
+<meta name="description" content="Backkdrop — curated shoes, watches, apparel and accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="starting">
+<div class="noise"></div>
+<header class="nav">
+  <a class="logo" href="#">BACK<span>K</span>DROP</a>
+  <nav>
+    <a href="#shop">Shop</a><a href="#drops">Drops</a><a href="#story">Story</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="themeBtn" class="theme-btn" aria-label="Toggle light and dark mode">☼</button><button id="accountBtn" class="account-btn">Account</button>
+    <button id="searchBtn">⌕</button><button id="wishlistBtn" aria-label="Open wishlist">♡ <b id="wishlistCount">0</b></button><button id="bagBtn">Bag <b id="bagCount">0</b></button>
+    <button id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-copy reveal">
+    <p class="eyebrow">THE NEW STANDARD / 2026</p>
+    <h1>WEAR YOUR<br><em>IDENTITY.</em></h1>
+    <p class="sub">Shoes. Watches. Apparel. Accessories.<br>Curated for people who refuse ordinary.</p>
+    <a class="btn magnetic" href="#shop">Explore collection <span>↗</span></a>
+  </div>
+  <div class="hero-orbit"><div class="orbit o1"></div><div class="orbit o2"></div><div class="hero-card"><span>BK</span><small>BACKKDROP<br>STUDIO 01</small></div></div>
+  <div class="scroll">SCROLL ↓</div>
+</section>
+
+<section id="drops" class="drop-section">
+  <div class="section-head reveal"><span>01 / LIMITED DROP</span><h2>THE DROP<span>.</span></h2><p>DROP 07 / UNLOCKS IN <strong id="timer">07:12:44</strong></p></div>
+  <div class="drop-grid drop-grid-v10">
+    <div class="drop-main reveal">
+      <div class="drop-image" style="background-image:url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1600&q=88')"><span class="drop-image-label">DROP 07 / 2026</span><span class="drop-image-stamp">LIMITED EDITION</span></div>
+      <div class="drop-copy"><span>DROP 07</span><h3>NOIR RUNNER</h3><p>Engineered street silhouette. Built around movement, contrast and everyday wear.</p><div class="drop-meta"><span>08 PIECES</span><span>48 UNITS</span><span>WORLDWIDE</span></div><button class="outline" onclick="toast('Drop reminder set')">NOTIFY ME ↗</button></div>
+    </div>
+    <div class="drop-side reveal">
+      <div class="drop-side-image" style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=88')"><span>01 / LOOK</span></div>
+      <div class="drop-side-copy"><span>THE MOOD</span><p>Quiet monochrome. Sharp proportions. A drop designed to carry the whole look.</p><a href="#shop" class="text-link">SHOP THE EDIT ↗</a></div>
+    </div>
+  </div>
+  <div class="drop-strip reveal">
+    <article style="background-image:url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85')"><span>02</span><b>TEXTURE / FORM</b></article>
+    <article style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85')"><span>03</span><b>STREET / MOTION</b></article>
+    <article style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85')"><span>04</span><b>AFTER / DARK</b></article>
+  </div>
+</section>
+
+<section class="marquee"><div>BACKKDROP / NEW SEASON / STREET CULTURE / EVERYDAY LUXURY / BACKKDROP / NEW SEASON / STREET CULTURE / EVERYDAY LUXURY / </div></section>
+
+<section class="categories reveal"><div class="category-card"><span>01</span><h3>SNEAKERS</h3><button onclick="document.querySelector('[data-filter=shoes]').click();document.querySelector('#shop').scrollIntoView()">SHOP SHOES ↗</button></div><div class="category-card"><span>02</span><h3>WATCHES</h3><button onclick="document.querySelector('[data-filter=watches]').click();document.querySelector('#shop').scrollIntoView()">SHOP WATCHES ↗</button></div><div class="category-card"><span>03</span><h3>APPAREL</h3><button onclick="document.querySelector('[data-filter=apparel]').click();document.querySelector('#shop').scrollIntoView()">SHOP APPAREL ↗</button></div><div class="category-card"><span>04</span><h3>ACCESSORIES</h3><button onclick="document.querySelector('[data-filter=accessories]').click();document.querySelector('#shop').scrollIntoView()">SHOP ACCESSORIES ↗</button></div></section>
+
+<section class="promo reveal"><div><span>BACKKDROP MEMBERS</span><h2>GET 10% OFF<br>YOUR FIRST DROP.</h2><p>Join the list for early access, exclusive releases and private offers.</p></div><button class="btn" onclick="toast('Welcome to Backkdrop — discount code BK10')">JOIN BACKKDROP ↗</button></section>
+
+<section id="shop" class="shop">
+  <div class="section-head reveal"><span>02 / SHOP</span><h2>CURATED <em>ESSENTIALS.</em></h2></div>
+  <div class="filters reveal">
+    <button class="active" data-filter="all">All</button><button data-filter="shoes">Shoes</button><button data-filter="watches">Watches</button><button data-filter="apparel">Apparel</button><button data-filter="accessories">Accessories</button>
+  </div>
+  <div id="products" class="products"></div>
+</section>
+
+<section class="editorial-grid reveal">
+  <div class="editorial-card editorial-large" style="background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=85')">
+    <div><span>BACKKDROP JOURNAL / 01</span><h2>THE CITY<br>IS YOUR<br><em>RUNWAY.</em></h2><a href="#shop">EXPLORE THE EDIT ↗</a></div>
+  </div>
+  <div class="editorial-stack">
+    <div class="editorial-card" style="background-image:url('https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=85')"><div><span>THE EVERYDAY EDIT</span><h3>BUILT FOR<br>EVERY MOVE.</h3></div></div>
+    <div class="editorial-card" style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85')"><div><span>NEW SEASON</span><h3>MAKE AN<br>ENTRANCE.</h3></div></div>
+  </div>
+</section>
+
+<section class="style-finder reveal">
+  <div><span>03 / FIND YOUR STYLE</span><h2>WHAT'S<br><em>YOUR BACKDROP?</em></h2></div>
+  <div><div class="style-buttons"><button data-style="street">STREET</button><button data-style="minimal">MINIMAL</button><button data-style="luxury">LUXURY</button><button data-style="sport">SPORT</button></div><div id="styleResult" class="style-result">Choose a mood. We will build your Backdrop.</div></div>
+</section>
+
+<section id="story" class="story">
+  <div class="story-copy reveal"><span>04 / OUR STORY</span><h2>NOT JUST<br>ANOTHER<br><em>STORE.</em></h2><p>Backkdrop was built around one simple idea: what you wear should feel like an extension of who you are. We curate everyday pieces across sneakers, watches, apparel and accessories — balancing street energy with clean, timeless design.</p>
+<p>We look for the details people remember: a silhouette that feels right, a watch that becomes part of your routine, a jacket that changes the whole mood. Every collection is selected to help you build a wardrobe that feels personal, not predictable.</p>
+<div class="story-points"><span><b>01</b> CURATED DROPS</span><span><b>02</b> EVERYDAY DESIGN</span><span><b>03</b> YOUR IDENTITY</span></div><a class="text-link" href="#shop">Discover Backkdrop ↗</a></div>
+  <div class="story-visual reveal">
+    <img class="story-image story-image-main" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85" alt="Menswear aesthetic lifestyle image">
+  </div>
+</section>
+</main>
+
+<section class="why-backkdrop reveal">
+  <div class="why-heading"><span>05 / WHY BACKKDROP</span><h2>THE DETAILS<br>MAKE THE<br><em>DIFFERENCE.</em></h2></div>
+  <div class="why-grid">
+    <article><div class="why-image" style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85')"></div><span>01</span><h3>CURATED</h3><p>Less noise. Better pieces. Every drop is selected around quality, silhouette and the way it works with the rest of your wardrobe.</p></article>
+    <article><div class="why-image" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85')"></div><span>02</span><h3>CONSCIOUS</h3><p>We prefer considered collections over endless scrolling. Discover products with a clear point of view and useful everyday purpose.</p></article>
+    <article><div class="why-image" style="background-image:url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85')"></div><span>03</span><h3>PERSONAL</h3><p>Your style is yours. Use Backkdrop to explore, save, mix and build a look that feels unmistakably personal.</p></article>
+  </div>
+</section>
+
+<section class="newsletter reveal"><div><span>06 / STAY IN THE LOOP</span><h2>FIRST LOOK.<br>FIRST ACCESS.</h2></div><form onsubmit="event.preventDefault();toast('You’re on the list ✓')"><input type="email" required placeholder="your@email.com"><button>SUBSCRIBE ↗</button></form></section>
+<footer><div><div class="logo">BACK<span>K</span>DROP</div><p>YOUR STYLE. YOUR BACKDROP.</p></div><div class="footer-links"><a href="#shop">Shop</a><a href="#drops">Drops</a><a href="#story">About</a><a href="#">Instagram</a></div><div>© 2026 BACKKDROP<br>Built for the next generation.<br><a href="https://unsplash.com/" target="_blank" rel="noopener">Photography via Unsplash</a></div></footer>
+
+
+<div id="mobileMenu" class="mobile-menu">
+  <button class="close" id="mobileClose">×</button>
+  <div class="mobile-menu-inner">
+    <span>BACKKDROP</span>
+    <a href="#shop">Shop</a><a href="#drops">Drops</a><a href="#story">Story</a>
+    <button id="mobileWishlist">Wishlist ↗</button><button id="mobileAccount">Account ↗</button>
+  </div>
+</div>
+
+<div id="authModal" class="modal">
+  <div class="auth-card">
+    <button class="modal-close" data-close-auth>×</button>
+    <div class="auth-visual"><span>BK</span><small>YOUR STYLE.<br>YOUR BACKDROP.</small></div>
+    <div class="auth-form-wrap">
+      <div class="auth-tabs"><button class="auth-tab active" data-auth="login">LOGIN</button><button class="auth-tab" data-auth="signup">SIGN UP</button></div>
+      <div id="loginForm" class="auth-form">
+        <span class="form-kicker">WELCOME BACK</span><h2>Good to<br><em>see you.</em></h2>
+        <label>Email<input id="loginEmail" type="email" placeholder="you@example.com"></label>
+        <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="••••••••"><button type="button" class="show-pass" data-target="loginPassword">Show</button></div></label>
+        <button class="btn full auth-submit" id="loginSubmit">LOGIN ↗</button>
+        <p class="auth-note">Demo account: any valid email + 4+ character password.</p>
+      </div>
+      <div id="signupForm" class="auth-form hidden">
+        <span class="form-kicker">JOIN BACKKDROP</span><h2>Create your<br><em>identity.</em></h2>
+        <label>Full name<input id="signupName" type="text" placeholder="Your name"></label>
+        <label>Email<input id="signupEmail" type="email" placeholder="you@example.com"></label>
+        <label>Password<div class="password-wrap"><input id="signupPassword" type="password" placeholder="Create a password"><button type="button" class="show-pass" data-target="signupPassword">Show</button></div></label>
+        <button class="btn full auth-submit" id="signupSubmit">CREATE ACCOUNT ↗</button>
+        <p class="auth-note">This is a front-end demo. Connect a real auth service before production.</p>
+      </div>
+      <div id="authSuccess" class="auth-success hidden"><div class="success-icon">✓</div><h2>You're in.</h2><p>Your Backkdrop account is ready.</p><button class="btn" data-close-auth>CONTINUE SHOPPING ↗</button></div>
+    </div>
+  </div>
+</div>
+
+
+<div id="profileModal" class="modal">
+  <div class="profile-card">
+    <button class="modal-close" id="profileClose">×</button>
+    <div class="profile-head"><span>BACKKDROP ACCOUNT</span><div class="profile-avatar" id="profileAvatar">BK</div><h2>Your<br><em>profile.</em></h2><p>Edit your details anytime. Changes are saved in this browser for this demo.</p></div>
+    <form id="profileForm" class="profile-form">
+      <label>Full name<input id="profileName" required></label>
+      <label>Email<input id="profileEmail" type="email" required></label>
+      <label>Phone<input id="profilePhone" type="tel" placeholder="Optional"></label>
+      <div class="profile-actions"><button type="submit" class="btn">SAVE CHANGES ↗</button><button type="button" class="outline logout-btn" id="logoutBtn">LOG OUT</button></div>
+    </form>
+  </div>
+</div>
+
+<div id="checkoutModal" class="modal">
+  <div class="checkout-card">
+    <button class="modal-close" id="checkoutClose">×</button>
+    <div class="checkout-head"><span>BACKKDROP CHECKOUT</span><div class="checkout-steps"><b class="step-dot active">1</b><i></i><b class="step-dot">2</b><i></i><b class="step-dot">3</b></div></div>
+    <div id="checkoutBody">
+      <div class="checkout-step active" data-step="1"><span>01 / DELIVERY</span><h2>Where should we<br><em>send it?</em></h2><div class="checkout-grid"><input placeholder="Full name"><input placeholder="Phone number"><input placeholder="Address" class="wide"><input placeholder="City"><input placeholder="PIN code"></div><button class="btn next-step">CONTINUE ↗</button></div>
+      <div class="checkout-step" data-step="2"><span>02 / PAYMENT</span><h2>Choose your<br><em>payment.</em></h2><div class="payment-options"><button class="payment-option active">UPI <small>Recommended</small></button><button class="payment-option">CARD <small>Visa / Mastercard</small></button><button class="payment-option">COD <small>Pay on delivery</small></button></div><button class="btn next-step">CONTINUE ↗</button></div>
+      <div class="checkout-step" data-step="3"><span>03 / REVIEW</span><h2>Ready to<br><em>place it?</em></h2><div id="checkoutSummary"></div><button class="btn full" id="placeOrder">PLACE ORDER · <span id="checkoutTotal">₹0</span></button></div>
+      <div class="order-success hidden"><div class="success-icon">✓</div><span>ORDER CONFIRMED</span><h2>You're<br><em>all set.</em></h2><p>Order <b id="orderNumber">BK000000</b> is being prepared.</p><button class="btn" id="finishCheckout">BACK TO SHOP ↗</button></div>
+    </div>
+  </div>
+</div>
+<div id="productModal" class="modal product-modal"><div class="product-detail-card"><button class="modal-close" id="productClose">×</button><div id="productDetailImage" class="product-detail-image"></div><div class="product-detail-copy"><span id="detailTag" class="form-kicker">NEW</span><div class="detail-rating" id="detailRating">★ 4.8</div><h2 id="detailName">Product</h2><p id="detailDesc"></p><div class="detail-price" id="detailPrice">₹0</div><div class="detail-options"><b>SIZE</b><div><button class="size active">S</button><button class="size">M</button><button class="size">L</button><button class="size">XL</button></div></div><div class="detail-actions"><button class="btn" id="detailAdd">ADD TO BAG ↗</button><button class="outline" id="detailWishlist">♡ SAVE</button></div><small>Free shipping above ₹2,999 · Demo storefront</small></div></div></div>
+<div id="wishlistPanel" class="wishlist-panel"><button class="close" id="wishlistClose">×</button><div class="wishlist-inner"><span>BACKKDROP / SAVED</span><h2>YOUR<br><em>WISHLIST.</em></h2><div id="wishlistItems"></div></div></div>
+<div id="searchPanel" class="overlay"><button class="close" data-close>×</button><div class="search-box"><span>SEARCH BACKKDROP</span><input id="searchInput" autofocus placeholder="Try “black sneakers”"><div id="searchResults"></div></div></div>
+
+<aside id="cart" class="cart"><button class="close" id="cartClose">×</button><h2>YOUR BAG</h2><div id="cartItems"></div><div class="cart-total"><span>Total</span><b id="total">₹0</b></div><button class="btn full" id="checkoutBtn">Checkout ↗</button></aside>
+
+<button id="chatOpen" class="chat-open" aria-label="Open Backkdrop AI">✦</button>
+<div id="chat" class="chat" aria-hidden="true">
+  <div class="chat-backdrop" id="chatBackdrop"></div>
+  <div class="chat-head"><div><b>BACKKDROP AI</b><small>STYLE ASSISTANT</small></div><button id="chatClose" aria-label="Close Backkdrop AI">×</button></div>
+  <div id="messages" class="messages"><div class="bot">Hey. I'm Backkdrop AI. Ask me about products, sizing, style or orders.</div></div>
+  <div class="chat-input"><input id="chatInput" placeholder="Ask anything…"><button id="sendChat">↗</button></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
