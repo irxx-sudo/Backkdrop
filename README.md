@@ -10,9 +10,9 @@ A premium, responsive fashion storefront built around curated drops, editorial s
 
 <br>
 
-[🌐 **LIVE WEBSITE**](https://irxx-sudo.github.io/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience/)
+[🌐 **LIVE WEBSITE**](https://irxx-sudo.github.io/Backkdrop/)
 &nbsp;&nbsp;•&nbsp;&nbsp;
-[💻 **SOURCE CODE**](https://github.com/irxx-sudo/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience)
+[💻 **SOURCE CODE**](https://github.com/irxx-sudo/Backkdrop)
 
 </div>
 
@@ -41,8 +41,8 @@ Backkdrop is currently a **front-end e-commerce experience** and serves as the f
 
 | Experience | Link |
 |---|---|
-| 🌐 **Live Store** | [**ENTER BACKKDROP →**](https://irxx-sudo.github.io/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience/) |
-| 💻 **GitHub Repository** | [**VIEW SOURCE →**](https://github.com/irxx-sudo/Backkdrop-A-Modern-Fashion-Lifestyle-E-Commerce-Experience/) |
+| 🌐 **Live Store** | [**ENTER BACKKDROP →**](https://irxx-sudo.github.io/Backkdrop/) |
+| 💻 **GitHub Repository** | [**VIEW SOURCE →**](https://github.com/irxx-sudo/Backkdrop/) |
 
 ---
 
